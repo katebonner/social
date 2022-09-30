@@ -18,9 +18,14 @@ ensure you have installed node.js and to install all dependencies:
 npm i
 ```
 
+Then create the optimal production build:
+```md
+npm run build
+```
+
 Then start the react application:
 ```md
-npm start
+npm run start
 ```
 
 
