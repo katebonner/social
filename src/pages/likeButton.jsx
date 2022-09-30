@@ -15,11 +15,11 @@ const LikeButton = () => {
 
     useEffect( () => {
         const getLikes = async () => {
-            const {data} = await Axios.get(`http://localhost:3001/api/v1/like/${likeIdStatic}/count`);
+            const {data} = await Axios.get(`localhost:3001/api/v1/like/${likeIdStatic}/count`);
             setLikes(data);
         }
         const getLiked = async () => {
-            const {data} = await Axios.get(`http://localhost:3001/api/v1/like/${likeIdStatic}/user/${userIdStatic}`);
+            const {data} = await Axios.get(`localhost:3001/api/v1/like/${likeIdStatic}/user/${userIdStatic}`);
             setLiked(data);
         }
         getLikes().catch(console.error);
@@ -32,7 +32,7 @@ const LikeButton = () => {
         if (!liked) {
             Axios({
                 method: 'post',
-                url: 'http://localhost:3001/api/v1/like/add',
+                url: 'localhost:3001/api/v1/like/add',
                 data: {
                     likeId: likeIdStatic,
                     userId: userIdStatic
@@ -49,7 +49,7 @@ const LikeButton = () => {
         if (liked) {
             Axios({
                 method: 'post',
-                url: 'http://localhost:3001/api/v1/like/remove',
+                url: 'localhost:3001/api/v1/like/remove',
                 data: {
                     likeId: likeIdStatic,
                     userId: userIdStatic
