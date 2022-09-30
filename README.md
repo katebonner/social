@@ -13,6 +13,11 @@ Clone this repository:
 git clone git@github.com:katebonner/social.git
 ```
 
+cd into folder:
+```md
+cd social
+```
+
 ensure you have installed node.js and to install all dependencies:
 ```md
 npm i
