@@ -33,7 +33,12 @@ Then start the react application:
 npm run start
 ```
 
-Be sure to concurrently run the server.js file:
+Be sure to concurrently run the server.js file located in the src file:
+
+```md
+cd src
+```
+
 ```md
 node server.js
 ```
