@@ -200,6 +200,29 @@ input:focus {
   color:#2e1a43;
 }
 
+.btn4 {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0.8em 2em 0.8em 2em;
+  color: white;
+  background-color:  #0000009d;
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: .5em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  margin: 2% 2%;
+}
+
+.padding-like {
+  padding: 0 .4em;
+}
+
 .relative {
   position: relative;
 }
@@ -351,7 +374,12 @@ input:focus {
   color: red;
 }
 
-
+.modal {
+  position: fixed;
+  background-color: #2e1a43b7;
+  border-radius: 2em;
+  z-index: 9999999;
+}
 
 @keyframes floating {
   0% { transform: translate(0,  0px); }

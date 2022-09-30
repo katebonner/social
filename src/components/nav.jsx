@@ -10,8 +10,9 @@ const Nav = () => {
     return(
         <>
         <div className='container-row nav align'>
-            <h1 className='title flex-2 logo-padding'>Passes</h1>
+            <h1 className='title flex-2 logo-padding'><Link to='/dashboard'>Passes</Link></h1>
             <div className='flex-2'>
+            <button className='btn3'><Link to='/likeButton'>LikeButton</Link></button>
             { location === '/dashboard' ?
             <button className='btn3'><Link to='/profile'>Profile</Link></button>
             :

@@ -9,7 +9,15 @@ const Profile = () => {
 
     const profile = Users[3];
     const profilePosts = Posts.filter((post) => post.userId === profile.id);
-    console.log(profilePosts);
+    // const profileFriends = Users.filter((user) => user.id !== 4);
+
+    const RenderFriends = () => {
+    //     return (
+    //         <>
+    //             <modal></modal>
+    //         </>
+    //     )
+    }
 
     return(
         <>
@@ -18,11 +26,12 @@ const Profile = () => {
             <img className='profile-page-img' src={profile.profilePhoto} alt='profile'></img>
             <h1 className='white'>{profile.username}</h1>
             <div className='container-column'>
+                {RenderFriends()}
                 <h2 className='white'>{profile.bio}</h2>
                     <div className='container-row align white' >
                         <a href={profile.insta} target='_blank' rel='noreferrer'><InstagramIcon className='white' ></InstagramIcon></a>
                         <h4 className='space'>|</h4>
-                        <h4>{profile.friends.length} friends</h4>
+                        <button className='btn3' onClick={RenderFriends}>{profile.friends.length} friends</button>
                         <h4 className='space'>|</h4>
                         <h4>{profilePosts.length} posts</h4>
                     </div>
